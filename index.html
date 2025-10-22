@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Arena</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- background scene (raised higher) -->
+    <div class="scene">
+      <div class="ring-3">
+        <div class="ring-2">
+          <div class="ring-1">
+            <div class="black-hole"></div>
+            <div class="glow"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="orbit">
+        <svg class="crescent crescent-1" viewBox="0 0 50 50">
+          <path d="M 0 0 C 54 50 185 57 226 0 C 198 39 35 32 0 0" fill="#ffffff55"></path>
+        </svg>
+        <svg class="crescent crescent-2" viewBox="0 0 50 50">
+          <path d="M 0 0 C 54 50 185 57 226 0 C 198 39 35 32 0 0" fill="#ffffff55"></path>
+        </svg>
+        <svg class="crescent crescent-3" viewBox="0 0 50 50">
+          <path d="M 0 0 C 54 50 185 57 226 0 C 198 39 35 32 0 0" fill="#ffffff55"></path>
+        </svg>
+        <svg class="crescent crescent-4" viewBox="0 0 50 50">
+          <path d="M 0 0 C 54 50 185 57 226 0 C 198 39 35 32 0 0" fill="#ffffff55"></path>
+        </svg>
+        <svg class="crescent crescent-5" viewBox="0 0 50 50">
+          <path d="M 0 0 C 54 50 185 57 226 0 C 198 39 35 32 0 0" fill="#ffffff55"></path>
+        </svg>
+        <svg class="crescent crescent-6" viewBox="0 0 50 50">
+          <path d="M 0 0 C 54 50 185 57 226 0 C 198 39 35 32 0 0" fill="#ffffff55"></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- matches row (infinite wheel scroll, no drag, no visible scrollbar) -->
+    <div class="matches" id="matches">
+      <div class="track" id="track">
+
+        <div class="card">
+          <div class="sub-card category"><span class="text_span">PREMIER LEAGUE</span></div>
+          <div class="card_container">
+            <div class="glass"></div>
+            <div class="card_inner">
+              <div class="teams">
+                <div class="team">LIVERPOOL</div>
+                <div class="vs">VS</div>
+                <div class="team">MAN CITY</div>
+              </div>
+              <div class="question">
+                Will the next throw in favor Manchester City within
+                <span class="time">60 seconds</span>?
+              </div>
+            </div>
+          </div>
+          <button class="sub-card join">Join</button>
+        </div>
+
+        <div class="card">
+          <div class="sub-card category"><span class="text_span">SERIE A</span></div>
+          <div class="card_container">
+            <div class="glass"></div>
+            <div class="card_inner">
+              <div class="teams">
+                <div class="team">AC MILAN</div>
+                <div class="vs">VS</div>
+                <div class="team">INTER</div>
+              </div>
+              <div class="question">
+                Will the next foul be committed by Inter in
+                <span class="time">45 seconds</span>?
+              </div>
+            </div>
+          </div>
+          <button class="sub-card join">Join</button>
+        </div>
+
+        <div class="card">
+          <div class="sub-card category"><span class="text_span">LALIGA</span></div>
+          <div class="card_container">
+            <div class="glass"></div>
+            <div class="card_inner">
+              <div class="teams">
+                <div class="team">BARCELONA</div>
+                <div class="vs">VS</div>
+                <div class="team">REAL MADRID</div>
+              </div>
+              <div class="question">
+                Will the next corner go to Real Madrid within
+                <span class="time">1 minute</span>?
+              </div>
+            </div>
+          </div>
+          <button class="sub-card join">Join</button>
+        </div>
+
+        <div class="card">
+          <div class="sub-card category"><span class="text_span">BUNDESLIGA</span></div>
+          <div class="card_container">
+            <div class="glass"></div>
+            <div class="card_inner">
+              <div class="teams">
+                <div class="team">BAYERN</div>
+                <div class="vs">VS</div>
+                <div class="team">DORTMUND</div>
+              </div>
+              <div class="question">
+                Will a shot on target occur within
+                <span class="time">40 seconds</span>?
+              </div>
+            </div>
+          </div>
+          <button class="sub-card join">Join</button>
+        </div>
+
+        <div class="card">
+          <div class="sub-card category"><span class="text_span">LIGUE 1</span></div>
+          <div class="card_container">
+            <div class="glass"></div>
+            <div class="card_inner">
+              <div class="teams">
+                <div class="team">PSG</div>
+                <div class="vs">VS</div>
+                <div class="team">MARSEILLE</div>
+              </div>
+              <div class="question">
+                Will PSG attempt a shot on target in
+                <span class="time">40 seconds</span>?
+              </div>
+            </div>
+          </div>
+          <button class="sub-card join">Join</button>
+        </div>
+
+        <div class="card">
+          <div class="sub-card category"><span class="text_span">UEFA CHAMPIONS LEAGUE</span></div>
+          <div class="card_container">
+            <div class="glass"></div>
+            <div class="card_inner">
+              <div class="teams">
+                <div class="team">ARSENAL</div>
+                <div class="vs">VS</div>
+                <div class="team">JUVENTUS</div>
+              </div>
+              <div class="question">
+                Will there be a corner kick within
+                <span class="time">30 seconds</span>?
+              </div>
+            </div>
+          </div>
+          <button class="sub-card join">Join</button>
+        </div>
+
+        <div class="card">
+          <div class="sub-card category"><span class="text_span">NBA</span></div>
+          <div class="card_container">
+            <div class="glass"></div>
+            <div class="card_inner">
+              <div class="teams">
+                <div class="team">GS WARRIORS</div>
+                <div class="vs">VS</div>
+                <div class="team">LAKERS</div>
+              </div>
+              <div class="question">
+                Will Curry score or assist within
+                <span class="time">30 seconds</span>?
+              </div>
+            </div>
+          </div>
+          <button class="sub-card join">Join</button>
+        </div>
+
+        <div class="card">
+          <div class="sub-card category"><span class="text_span">EUROLEAGUE</span></div>
+          <div class="card_container">
+            <div class="glass"></div>
+            <div class="card_inner">
+              <div class="teams">
+                <div class="team">REAL MADRID</div>
+                <div class="vs">VS</div>
+                <div class="team">PANATHINAIKOS</div>
+              </div>
+              <div class="question">
+                Will there be a three pointer within
+                <span class="time">25 seconds</span>?
+              </div>
+            </div>
+          </div>
+          <button class="sub-card join">Join</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const matches = document.getElementById('matches');
+      const track = document.getElementById('track');
+
+      const baseCards = Array.from(track.children);
+      const baseWidth = () => baseCards.reduce((w, el) => w + el.getBoundingClientRect().width + 28, 0);
+      baseCards.forEach(c => track.appendChild(c.cloneNode(true)));
+      baseCards.forEach(c => track.insertBefore(c.cloneNode(true), track.firstChild));
+
+      function centerToMiddle() {
+        const w = baseWidth();
+        matches.scrollLeft = w;
+      }
+
+      let velocity = 0;
+      matches.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        velocity += e.deltaY * 0.45;
+      }, { passive: false });
+
+      function animateScroll() {
+        matches.scrollLeft += velocity;
+        const w = baseWidth();
+        if (matches.scrollLeft < w * 0.25) matches.scrollLeft += w;
+        if (matches.scrollLeft > w * 1.75) matches.scrollLeft -= w;
+        velocity *= 0.94;
+        requestAnimationFrame(animateScroll);
+      }
+
+      animateScroll();
+      window.addEventListener('load', centerToMiddle);
+      window.addEventListener('resize', centerToMiddle);
+    </script>
+  </body>
+</html>
